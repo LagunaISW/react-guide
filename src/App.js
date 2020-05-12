@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
+import { Router } from "@reach/router";
 import List from "./components/List";
 import Image from "./components/Image";
 
@@ -17,11 +18,11 @@ const App = () => {
   return (
     <div>
       <header>Holi</header>
-
-      {/* We are passing items through props */}
-      <List items={items} />
-
-      <Image />
+      <Router>
+        {/* We are passing items through props */}
+        <List items={items} path='/' />
+        <Image path='/image' />
+      </Router>
     </div>
   );
 };
