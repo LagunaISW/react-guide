@@ -43,7 +43,12 @@ class Image extends Component {
   // should return a HTML or React element (only one)
   render() {
     if (this.state.loading) {
-      return <h1>loading corgi… </h1>;
+      return (
+        <h1>
+          loading corgi… {this.props.id}
+          {this.props.name}
+        </h1>
+      );
     }
 
     return <img src='http://placecorgi.com/300/300' alt='cutest thing ever' />;

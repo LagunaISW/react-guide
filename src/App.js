@@ -17,11 +17,12 @@ const App = () => {
   // Every functional component should return a HTML or React element (only one)
   return (
     <div>
-      <header>Holi</header>
+      <header>Menu sasd user</header>
       <Router>
         {/* We are passing items through props */}
         <List items={items} path='/' />
-        <Image path='/image' />
+        <Image path='/image/:id/:name' />
+        <Image path='/corgi' />
       </Router>
     </div>
   );

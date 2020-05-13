@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "@reach/router";
 
 // This is also a functional component
 // Is receiving props as parameter
@@ -30,6 +31,7 @@ const List = (props) => {
 
       <p>Total of bangs: {bangs}</p>
       <button onClick={handleClick}>Bang!</button>
+      <Link to='/corgi'>Link</Link>
     </> // </> Here ends the fragment
   );
 };
